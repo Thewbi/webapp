@@ -1,4 +1,3 @@
-//#include "stdafx.h"
 #include "pch.h"
 
 #include <winsock2.h>
@@ -8,6 +7,7 @@
 #include <sstream>
 #include "factory/RequestFactory.h"
 #include "server/AppServer.h"
+
 
 #pragma comment(lib, "Ws2_32.lib")
 
@@ -26,6 +26,9 @@ int main()
 	std::string request = appServer.receiveMessage();
 
 	std::cout << request << std::endl;
+
+	RequestFactory requestFactory;
+	HTTPRequest httpRequest = requestFactory.createRequest(request);
 
 	/*
 	HTTP / 1.1 200 OK

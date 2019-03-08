@@ -155,9 +155,10 @@ std::string AppServer::receiveMessage()
 
 		if (iResult > 0)
 		{
-			//printf("Bytes received: %d\n", iResult);
-			request.append(recvbuf);
+			//request.append(recvbuf);
 			//memset(&recvbuf[0], 0, recvbuflen	);
+			std::string temp(recvbuf, 0, iResult);
+			request.append(temp);
 
 			char *begin = recvbuf;
 			char *end = begin + DEFAULT_BUFLEN;

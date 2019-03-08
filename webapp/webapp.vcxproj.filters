@@ -45,6 +45,12 @@
     <ClInclude Include="exception\WebServerException.h">
       <Filter>Headerdateien\exception</Filter>
     </ClInclude>
+    <ClInclude Include="HTTPRequest.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="webapp.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -61,6 +67,9 @@
     </ClCompile>
     <ClCompile Include="exception\WebServerException.cpp">
       <Filter>Quelldateien\exception</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPRequest.cpp">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
