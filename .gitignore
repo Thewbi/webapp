@@ -32,3 +32,8 @@
 *.app
 /.vs/webapp/v15/Browse.VC.db
 /.vs/webapp/v15/Browse.VC.opendb
+*.tlog
+*.log
+*.pdb
+*.idb
+*.ilk

@@ -13,10 +13,37 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Quelldateien\factory">
+      <UniqueIdentifier>{bb6bf0e2-07ec-4159-a6d8-78b97ca3dbab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\factory">
+      <UniqueIdentifier>{df5fdbfe-1a61-4257-8d73-c6cf9c010338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\server">
+      <UniqueIdentifier>{c383ef32-9eb6-4266-818b-cee58e5a942e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\server">
+      <UniqueIdentifier>{cacf0bd2-9b77-4ec5-9e76-712a6171f0c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\exception">
+      <UniqueIdentifier>{e7f20b56-f451-4f68-8414-c23dd1530cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\exception">
+      <UniqueIdentifier>{e6aa9237-3c16-4867-b6ab-17e5ba5d6a5f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="factory\RequestFactory.h">
+      <Filter>Headerdateien\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="server\AppServer.h">
+      <Filter>Headerdateien\server</Filter>
+    </ClInclude>
+    <ClInclude Include="exception\WebServerException.h">
+      <Filter>Headerdateien\exception</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -25,6 +52,15 @@
     </ClCompile>
     <ClCompile Include="webapp.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="factory\RequestFactory.cpp">
+      <Filter>Quelldateien\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="server\AppServer.cpp">
+      <Filter>Quelldateien\server</Filter>
+    </ClCompile>
+    <ClCompile Include="exception\WebServerException.cpp">
+      <Filter>Quelldateien\exception</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
