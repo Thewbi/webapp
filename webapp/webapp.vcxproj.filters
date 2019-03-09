@@ -31,6 +31,33 @@
     <Filter Include="Quelldateien\exception">
       <UniqueIdentifier>{e6aa9237-3c16-4867-b6ab-17e5ba5d6a5f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{993297d0-8e69-4b6f-97aa-0ffa95f81f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\views">
+      <UniqueIdentifier>{3bf04e0f-c348-4213-83ac-372e74d608df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\views\pages">
+      <UniqueIdentifier>{e3ce0af4-1885-4434-890e-2863f77c0691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\controller">
+      <UniqueIdentifier>{1fbe5e76-8143-4c54-8dd4-23723959aaa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\routing">
+      <UniqueIdentifier>{37eb2247-a874-453d-a95c-be12ee029d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\controller">
+      <UniqueIdentifier>{ec172266-2541-4012-82fb-dbce2760abf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\routing">
+      <UniqueIdentifier>{f63b7f97-ec35-4487-9caa-f77281ab152c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\engine">
+      <UniqueIdentifier>{149d9ccd-cc91-4a61-8109-a98cadbcfa5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\engine">
+      <UniqueIdentifier>{b9931d73-b5e9-4eaf-a735-c2a4a93b5f0c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -48,8 +75,26 @@
     <ClInclude Include="HTTPRequest.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="webapp.h">
+    <ClInclude Include="routing\DefaultRouter.h">
+      <Filter>Headerdateien\routing</Filter>
+    </ClInclude>
+    <ClInclude Include="controller\BaseController.h">
+      <Filter>Headerdateien\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="controller\IndexController.h">
+      <Filter>Headerdateien\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="controller\DefaultController.h">
+      <Filter>Headerdateien\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
       <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Engine.h">
+      <Filter>Headerdateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\RequestData.h">
+      <Filter>Headerdateien\engine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -71,5 +116,28 @@
     <ClCompile Include="HTTPRequest.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="routing\DefaultRouter.cpp">
+      <Filter>Quelldateien\routing</Filter>
+    </ClCompile>
+    <ClCompile Include="controller\BaseController.cpp">
+      <Filter>Quelldateien\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="controller\IndexController.cpp">
+      <Filter>Quelldateien\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="controller\DefaultController.cpp">
+      <Filter>Quelldateien\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Engine.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\RequestData.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\views\pages\index.html">
+      <Filter>resources\views\pages</Filter>
+    </None>
   </ItemGroup>
 </Project>

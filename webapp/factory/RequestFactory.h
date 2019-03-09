@@ -6,6 +6,7 @@
 #include <iostream>
 
 #include "../HTTPRequest.h"
+#include "../util.h"
 
 class RequestFactory
 {
