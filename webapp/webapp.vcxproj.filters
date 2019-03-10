@@ -96,6 +96,12 @@
     <ClInclude Include="engine\RequestData.h">
       <Filter>Headerdateien\engine</Filter>
     </ClInclude>
+    <ClInclude Include="engine\XercesContentHandler.h">
+      <Filter>Headerdateien\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\XmlDomDocument.h">
+      <Filter>Headerdateien\engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -132,6 +138,12 @@
       <Filter>Quelldateien\engine</Filter>
     </ClCompile>
     <ClCompile Include="engine\RequestData.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\XercesContentHandler.cpp">
+      <Filter>Quelldateien\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\XmlDomDocument.cpp">
       <Filter>Quelldateien\engine</Filter>
     </ClCompile>
   </ItemGroup>
